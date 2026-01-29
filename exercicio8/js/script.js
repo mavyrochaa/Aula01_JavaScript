@@ -1,10 +1,10 @@
 function calcularIdade() {
 
-    let nascimento = document.getElementById("nascimento").value;
-    let atual = document.getElementById("atual").value;
+    const nascimento = document.getElementById("nascimento").value;
+    const atual = document.getElementById("atual").value;
 
-    let idade = Number(atual) - Number(nascimento);
+    const idade = parseInt(atual) - parseInt(nascimento);
 
-    document.getElementById("resultado").innerText =
-        "Você tem ou fará " + idade + " anos neste ano.";
+    const resultado = document.getElementById("resultado");
+    resultado.textContent = "Você tem ou fará " + idade + " anos neste ano.";
 }

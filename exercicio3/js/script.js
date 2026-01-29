@@ -1,9 +1,10 @@
-function converter() {
+function converterTemp() {
 
-    let celsius = document.getElementById("celsius").value;
+    const celsius = document.getElementById("celsius").value;
 
-    let fahrenheit = (celsius * 9/5) + 32;
+    const fahrenheit = (parseFloat(celsius) * 9/5) + 32;
 
-    document.getElementById("resultado").innerText =
-        "Resultado: " + fahrenheit + " °F";
+    const resultado = document.getElementById("resultado");
+    resultado.textContent = "Resultado: " + fahrenheit + " °F";
 }
+

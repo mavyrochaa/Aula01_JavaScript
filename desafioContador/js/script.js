@@ -1,17 +1,14 @@
-let contador = 0;
-
 function aumentar() {
-    contador = contador + 1;
-    document.querySelector(".numero").innerText = contador;
-    //getElement nao estava funcionando fiz com ele e nao alterava os numeros ai fui testando
+    const valor = document.getElementById("numero");
+    valor.textContent = parseInt(valor.textContent) + 1;
 }
 
 function diminuir() {
-    contador = contador - 1;
-    document.querySelector(".numero").innerText = contador;
+    const valor = document.getElementById("numero");
+    valor.textContent = parseInt(valor.textContent) - 1;
 }
 
 function resetar() {
-    contador = 0;
-    document.querySelector(".numero").innerText = contador;
+    const valor = document.getElementById("numero");
+    valor.textContent = 0;
 }

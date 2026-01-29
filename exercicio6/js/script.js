@@ -1,10 +1,10 @@
 function converterMoeda() {
 
-    let reais = document.getElementById("reais").value;
-    let cotacao = document.getElementById("cotacao").value;
+    const reais = document.getElementById("reais").value;
+    const cotacao = document.getElementById("cotacao").value;
 
-    let dolar = Number(reais) / Number(cotacao);
+    const dolar = parseFloat(reais) / parseFloat(cotacao);
 
-    document.getElementById("resultado").innerText =
-        "Valor em Dólar: $" + dolar;
+    const resultado = document.getElementById("resultado");
+    resultado.textContent = "Valor em Dólar: $" + dolar;
 }

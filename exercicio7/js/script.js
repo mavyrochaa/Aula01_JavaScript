@@ -1,10 +1,10 @@
 function calcularArea() {
 
-    let base = document.getElementById("base").value;
-    let altura = document.getElementById("altura").value;
+    const base = document.getElementById("base").value;
+    const altura = document.getElementById("altura").value;
 
-    let area = Number(base) * Number(altura);
+    const area = parseFloat(base) * parseFloat(altura);
 
-    document.getElementById("resultado").innerText =
-        "Área do retângulo: " + area;
+    const resultado = document.getElementById("resultado");
+    resultado.textContent = "Área do retângulo: " + area;
 }
